@@ -5,7 +5,7 @@
 #studio h2::before,
 #studio h2::after,
 .story__article::after {
-  animation: rotation-fleur 4s backwar infinite linear;
+  animation: rotation-fleur 4s infinite linear;
 }
 
 @keyframes rotation-fleur {
@@ -16,5 +16,21 @@
   to {
     transform-origin: center;
     transform: rotate(1turn) translate(0);
+  }
+}
+section {
+  animation: fade-in-section 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-section {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }/*# sourceMappingURL=main.css.map */
