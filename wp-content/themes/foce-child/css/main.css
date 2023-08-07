@@ -10,9 +10,9 @@
 
 @keyframes rotation-fleur {
   from {
-    transform: rotate(0turn);
+    transform: rotate(0turn) translate(0);
   }
   to {
-    transform: rotate(1turn);
+    transform: rotate(1turn) translate(0);
   }
 }/*# sourceMappingURL=main.css.map */
