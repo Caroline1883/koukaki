@@ -5,14 +5,16 @@
 #studio h2::before,
 #studio h2::after,
 .story__article::after {
-  animation: rotation-fleur 4s infinite linear;
+  animation: rotation-fleur 4s backwar infinite linear;
 }
 
 @keyframes rotation-fleur {
   from {
+    transform-origin: center;
     transform: rotate(0turn) translate(0);
   }
   to {
+    transform-origin: center;
     transform: rotate(1turn) translate(0);
   }
 }/*# sourceMappingURL=main.css.map */
