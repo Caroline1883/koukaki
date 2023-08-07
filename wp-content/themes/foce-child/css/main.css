@@ -1,5 +1,18 @@
-.story h2::after:hover {
-  transform: rotate(-90 deg);
-  transition: transform 500ms ease-in-out;
-  animation: infinite;
+.story h2::after,
+.site-footer ul::after,
+.site-footer::before,
+.site-footer::after,
+#studio h2::before,
+#studio h2::after,
+.story__article::after {
+  animation: rotation-fleur 2s infinite linear;
+}
+
+@keyframes rotation-fleur {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
 }/*# sourceMappingURL=main.css.map */
