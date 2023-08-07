@@ -1,6 +1,30 @@
-.banner {
-    img{
-    animation: floatingLogo 5s ease-in-out infinite;
-    animation-delay: 1ms;
+// .rotate{
+//     animation: rotation 2s infinite linear;
+// }
+
+// @keyframes rotation{
+//     from{
+//         transform: rotate(0deg);
+//     }
+//     to{
+//         transform: rotate(359deg);
+//     }
+// }
+
+.story h2::after {
+    &:hover {
+        transform: rotate(-90 deg);
+        transition: transform 500ms ease-in-out;
+        animation: infinite;
     }
 }
+
+// site-footer::after,
+// .site-footer ul::after,
+// .site-footer::before,
+// .story h2::after,
+// .story__article::after,
+// #studio h2::before,
+// #studio h2::after
+
+// .site-footer::after,.site-footer ul::after,.site-footer::before,.story h2::after,.story__article::after,#studio h2::before,#studio h2::after{
