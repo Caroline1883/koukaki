@@ -5,7 +5,7 @@
 #studio h2::before,
 #studio h2::after,
 .story__article::after {
-  animation: rotation-fleur 2s infinite linear;
+  animation: rotation-fleur 4s infinite linear;
 }
 
 @keyframes rotation-fleur {

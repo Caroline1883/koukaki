@@ -1,16 +1,3 @@
-// .rotate{
-//     animation: rotation 2s infinite linear;
-// }
-
-// @keyframes rotation{
-//     from{
-//         transform: rotate(0deg);
-//     }
-//     to{
-//         transform: rotate(359deg);
-//     }
-// }
-
 .story h2::after, 
 .site-footer ul::after,
 .site-footer::before,
@@ -18,7 +5,7 @@
 #studio h2::before,
 #studio h2::after,
 .story__article::after {
-    animation: rotation-fleur 2s infinite linear;
+    animation: rotation-fleur 4s infinite linear;
     }
 
     @keyframes rotation-fleur{
@@ -29,9 +16,3 @@
             transform: rotate(1turn);
         }
     }
-
-
-// #studio h2::before,
-// #studio h2::after
-
-// .site-footer::after,.site-footer ul::after,.site-footer::before,.story h2::after,.story__article::after,#studio h2::before,#studio h2::after{
