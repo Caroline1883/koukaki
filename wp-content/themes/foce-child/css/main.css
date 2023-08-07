@@ -1,4 +1,5 @@
-.banner img {
-  animation: floatingLogo 5s ease-in-out infinite;
-  animation-delay: 1ms;
+.story h2::after:hover {
+  transform: rotate(-90 deg);
+  transition: transform 500ms ease-in-out;
+  animation: infinite;
 }/*# sourceMappingURL=main.css.map */
