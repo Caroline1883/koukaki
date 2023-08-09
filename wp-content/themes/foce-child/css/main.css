@@ -18,8 +18,8 @@
     transform: rotate(1turn) translate(0);
   }
 }
-section {
-  animation: fade-in-section 3s;
+.fade-in-section {
+  animation: fade-in-section 5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -27,10 +27,8 @@ section {
 @keyframes fade-in-section {
   from {
     opacity: 0;
-    transform: translateY(-10%);
   }
   to {
     opacity: 1;
-    transform: translateY(0%);
   }
 }/*# sourceMappingURL=main.css.map */
