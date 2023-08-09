@@ -39,7 +39,7 @@
 //fade in sections
 
 .fade-in-section{
-    animation: fade-in-section 5s;
+    animation: fade-in-section 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -63,9 +63,9 @@
     }    
 }
 
-
 .img-relative{
-    position: relative;
+    // position: relative;
+    height: 0px;
 }
 
 //animation des titres
