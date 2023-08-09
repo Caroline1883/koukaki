@@ -1,21 +1,34 @@
-.story h2::after,
 .site-footer ul::after,
 .site-footer::before,
 .site-footer::after,
 #studio h2::before,
 #studio h2::after,
 .story__article::after {
-  animation: rotation-fleur 4s infinite linear;
+  animation: rotation-fleur 3s infinite linear;
 }
 
 @keyframes rotation-fleur {
   from {
-    transform-origin: center;
-    transform: rotate(0turn) translate(0);
+    transform-origin: 50% 50%;
+    transform: rotate(0turn);
   }
   to {
-    transform-origin: center;
-    transform: rotate(1turn) translate(0);
+    transform-origin: 50% 50%;
+    transform: rotate(1turn);
+  }
+}
+.story h2::after {
+  animation: rotation-sunflower 3s infinite linear;
+}
+
+@keyframes rotation-sunflower {
+  from {
+    transform-origin: 50% 45%;
+    transform: rotate(0turn);
+  }
+  to {
+    transform-origin: 50% 45%;
+    transform: rotate(1turn);
   }
 }
 .fade-in-section {
