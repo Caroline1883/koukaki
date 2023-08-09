@@ -55,4 +55,19 @@
 
 .img-relative {
   position: relative;
+}
+
+.animation-titre {
+  animation: animation-titre 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animation-titre {
+  from {
+    margin-top: 100%;
+  }
+  to {
+    margin-top: 0%;
+  }
 }/*# sourceMappingURL=main.css.map */

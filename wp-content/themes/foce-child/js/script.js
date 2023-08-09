@@ -37,22 +37,18 @@ window.addEventListener('scroll',() =>{
 });
 
 
+//Animation titre
+
+const observerTitle = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting){
+            entry.target.classList.add('animation-titre')
+            return;
+            }
+    });        
+    });
+
+observerTitle.observe(document.querySelector('h2'));
+observerTitle.observe(document.querySelector('h3'));
 
 
-// document.addEventListener('DOMContentLoaded', (event) => {
- 
-//     const observer = new IntersectionObserver(entries => {
-//         entries.forEach(entry => {
-//           const titres = entry.target.querySelector("h1,h2,h3");
-    
-//           if (entry.isIntersecting) {
-//             titres.classList.add('toAnim');
-//             return; 
-//           }
-    
-//           titres.classList.remove('toAnim');
-//         });
-//       });
-    
-//       observer.observe(document.querySelector('section'));
-//     });
