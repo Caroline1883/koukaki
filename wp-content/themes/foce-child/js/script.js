@@ -33,7 +33,7 @@ observerLogo.observe(document.querySelector('.story h2'));
 
 const parallax = document.querySelector('.banner');
 window.addEventListener('scroll',() =>{
-    parallax.style.backgroundPositionY = -window.scrollY + "px"
+    parallax.style.backgroundPositionY = window.scrollY + "px"
 });
 
 

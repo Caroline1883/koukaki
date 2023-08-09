@@ -46,7 +46,7 @@
   }
 }
 .banner {
-  background-size: 200%;
+  background-size: 110%;
   background-repeat: no-repeat;
 }
 .banner img {
@@ -60,14 +60,14 @@
 .animation-titre {
   animation: animation-titre 2s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  animation-fill-mode: backwards;
 }
 
 @keyframes animation-titre {
   from {
-    margin-top: 100%;
+    transform: translateY(0);
   }
   to {
-    margin-top: 0%;
+    transform: translateY(100px);
   }
 }/*# sourceMappingURL=main.css.map */
