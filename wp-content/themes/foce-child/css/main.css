@@ -44,4 +44,15 @@
   to {
     opacity: 1;
   }
+}
+.banner {
+  background-size: 200%;
+  background-repeat: no-repeat;
+}
+.banner img {
+  position: fixed;
+}
+
+.img-relative {
+  position: relative;
 }/*# sourceMappingURL=main.css.map */

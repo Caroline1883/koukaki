@@ -55,3 +55,16 @@
 
 //parallax logo
 
+.banner{
+    background-size: 200%;
+    background-repeat: no-repeat;
+    img{
+        position: fixed;
+    }    
+}
+
+
+.img-relative{
+    position: relative;
+}
+
