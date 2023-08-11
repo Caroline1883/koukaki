@@ -4,11 +4,11 @@
 #studio h2::before,
 #studio h2::after,
 .story__article::after,
-.rotation {
-  animation: rotation-fleur 3s infinite linear;
+.flower-rotation {
+  animation: flower-rotation 3s infinite linear;
 }
 
-@keyframes rotation-fleur {
+@keyframes flower-rotation {
   from {
     transform: rotate(0turn);
   }
@@ -17,10 +17,10 @@
   }
 }
 .story h2::after {
-  animation: rotation-sunflower 3s infinite linear;
+  animation: sunflower-rotation 3s infinite linear;
 }
 
-@keyframes rotation-sunflower {
+@keyframes sunflower-rotation {
   from {
     transform-origin: 50% 45%;
     transform: rotate(0turn);
@@ -83,6 +83,9 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.oscar img {
+  max-width: 278;
 }
 .oscar div {
   background-image: url("../assets/orange_oscar_bg.png");
