@@ -13,28 +13,32 @@ observer.observe(document.querySelector('.story'));
 observer.observe(document.querySelector('#studio'));
 
 
-//parallax
-
-// const logo = document.querySelector('.banner img');
-
-// const observerLogo = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//         if (entry.isIntersecting){
-//             logo.classList.add('img-relative')
-//             return;
-//             }
-//     });        
-//     });
-
-// observerLogo.observe(document.querySelector('.story h2'));
-
-// const parallax = document.querySelector('.banner');
-// window.addEventListener('scroll',() =>{
-//     parallax.style.backgroundPositionY = -window.scrollY + "px"
-// });
-
-
 //Animation titre
+
+// console.log("boum");
+
+const spans = document.querySelectorAll('span');
+
+const observertitlesOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.5
+};
+
+const observerTitle = new IntersectionObserver((entries, observerTitle) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting){
+            console.log("bim");
+            entry.target.classList.add('title-animation');
+            observerTitle.unobserve(entry.target); // Utilisez observerTitle ici
+        }
+    });
+}, observertitlesOptions);
+
+spans.forEach(span => {
+  observerTitle.observe(span);
+});
+
 
 // const observerTitle = new IntersectionObserver(entries => {
 //     entries.forEach(entry => {

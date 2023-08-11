@@ -57,6 +57,31 @@
   left: 0;
 }
 
+h2 {
+  overflow: hidden;
+}
+
+.title-animation {
+  white-space: nowrap;
+  padding-left: 20px;
+  display: inline-block;
+  transform: translateY(100%);
+  animation: title-animation 0.5s ease-in-out forwards;
+}
+
+.title-animation:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.title-animation:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+@keyframes title-animation {
+  to {
+    transform: translateY(0%);
+  }
+}
 .oscar {
   padding-top: 200px;
   display: flex;
