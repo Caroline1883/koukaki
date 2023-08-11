@@ -57,13 +57,8 @@
   left: 0;
 }
 
-h2 {
-  overflow: hidden;
-}
-
 .title-animation {
-  white-space: nowrap;
-  padding-left: 20px;
+  white-space: pre;
   display: inline-block;
   transform: translateY(100%);
   animation: title-animation 0.5s ease-in-out forwards;
