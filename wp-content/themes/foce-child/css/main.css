@@ -3,7 +3,8 @@
 .site-footer::after,
 #studio h2::before,
 #studio h2::after,
-.story__article::after {
+.story__article::after,
+.rotation {
   animation: rotation-fleur 3s infinite linear;
 }
 
@@ -45,7 +46,17 @@
 }
 .banner {
   background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 800px;
 }
+.banner img {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
 .oscar {
   padding-top: 200px;
   display: flex;

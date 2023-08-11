@@ -4,7 +4,8 @@
 .site-footer::after,
 #studio h2::before,
 #studio h2::after,
-.story__article::after {
+.story__article::after, 
+.rotation{
     animation: rotation-fleur 3s infinite linear;
     }
 
@@ -54,8 +55,15 @@
 //parallax logo
 
 .banner{
-    background-attachment: fixed;
+background-attachment: fixed;
+background-size: cover;
+background-position: center; 
+background-repeat: no-repeat;
+height: 800px;
     img{
+        position: sticky;
+        top: 0;
+        left: 0;
     }    
 }
 
