@@ -15,8 +15,6 @@ observer.observe(document.querySelector('#studio'));
 
 //Animation titre
 
-// console.log("boum");
-
 const spans = document.querySelectorAll('span');
 
 const observertitlesOptions = {
@@ -28,7 +26,6 @@ const observertitlesOptions = {
 const observerTitle = new IntersectionObserver((entries, observerTitle) => {
     entries.forEach(entry => {
         if (entry.isIntersecting){
-            console.log("bim");
             entry.target.classList.add('title-animation');
             observerTitle.unobserve(entry.target); // Utilisez observerTitle ici
         }
@@ -40,16 +37,15 @@ spans.forEach(span => {
 });
 
 
-// const observerTitle = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//         if (entry.isIntersecting){
-//             entry.target.classList.add('animation-titre')
-//             return;
-//             }
-//     });        
-//     });
+//Accélaration des fleurs au scroll
+//Problème : pas de class sur pseudo-éléments
 
-// observerTitle.observe(document.querySelector('h2'));
-// observerTitle.observe(document.querySelector('h3'));
+// const flowerRotation = document.querySelector(".flower-rotation");
+// window.addEventListener('scroll', () => {
+//     flowerRotation.style.animationDuration = `5ms`;
+// })
+
+
+
 
 
