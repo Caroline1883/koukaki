@@ -132,3 +132,17 @@ height: 800px;
 }
 
 
+//gestion de la vidéo
+
+.banner{
+    position: relative;
+}
+
+#background-video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    }

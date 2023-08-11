@@ -46,6 +46,23 @@ spans.forEach(span => {
 // })
 
 
+//Parallaxe vidéo
+
+const video = document.getElementById('background-video');
+const banner = document.querySelector('.banner');
+
+window.addEventListener('scroll', () => {
+    const scrollValue = window.scrollY;
+    const offset = scrollValue * 0.1;
+    
+    banner.style.height = video.clientHeight + 'px';
+
+    video.style.transform = `translateY(-${offset}px)`;
+});
+
+window.dispatchEvent(new Event('scroll'));
+
+
 
 
 
