@@ -10,11 +10,9 @@
 
     @keyframes rotation-fleur{
         from{
-            transform-origin: 50% 50%;
             transform: rotate(0turn);
         }
         to{ 
-            transform-origin: 50% 50%;
             transform: rotate(1turn);
         }
     }
@@ -56,34 +54,27 @@
 //parallax logo
 
 .banner{
-    background-size: 110%;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
     img{
-        position: fixed;
     }    
-}
-
-.img-relative{
-    // position: relative;
-    height: 0px;
 }
 
 //animation des titres
 
-.animation-titre{
-    animation: animation-titre 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: backwards;
-}
+// .animation-titre{
+//     animation: animation-titre 2s;
+//     animation-iteration-count: 1;
+//     animation-fill-mode: forwards;
+// }
 
-@keyframes animation-titre{
-    from{
-        transform: translateY(0);
-    }
-    to{
-        transform: translateY(100px);
-    }
-}
+// @keyframes animation-titre{
+//     from{
+//         transform: translateY(100px);
+//     }
+//     to{
+//         transform: translateY(0px);
+//     }
+// }
 
 //section oscar
 
