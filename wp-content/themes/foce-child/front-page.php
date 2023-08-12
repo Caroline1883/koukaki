@@ -29,7 +29,8 @@ get_header();
             $characters_query = new WP_Query($args);
             ?>
             <article id="characters">
-                <div class="main-character">
+                <!-- Ancienne section -->
+                <!-- <div class="main-character">
                     <h3><span>Les</span><span> personnages</span></h3>
                     <?php
                     $main_character = $characters_query->posts[0];
@@ -52,7 +53,9 @@ get_header();
                         echo '</figure>';
                     }
                     ?>
-                </div>
+                </div> -->
+                <!-- Nouveau template parts -->
+                <?php echo get_template_part('template-parts/swiper'); ?>
             </article>
             <article id="place">
                 <div>

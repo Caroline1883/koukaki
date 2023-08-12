@@ -154,4 +154,8 @@
   79% {
     transform: translate(-11px, 12px);
   }
+}
+.swiper {
+  width: 600px;
+  height: 300px;
 }/*# sourceMappingURL=main.css.map */
