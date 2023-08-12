@@ -134,15 +134,15 @@ height: 800px;
 
 //gestion de la vidéo
 
-.banner{
-    position: relative;
+.container-video{
+    position: absolute;
 }
 
 #background-video {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: contain;
+    position: sticky;
+    object-fit: cover;
+        @media(max-width: 996px){
+            display: none;
+        }
     }
+
