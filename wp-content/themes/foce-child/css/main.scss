@@ -64,6 +64,7 @@ height: 800px;
         position: sticky;
         top: 0;
         left: 0;
+        animation: floating 4s ease-in-out infinite;
     }    
 }
 
@@ -145,4 +146,26 @@ height: 800px;
             display: none;
         }
     }
+
+//logo flottant
+
+@keyframes floating{
+    0%, 100%{
+        transform: translate(0px);
+    }
+    19%{
+        transform: translate(11px, 10px);
+
+    }
+    41%{
+        transform: translate(10px, -12px);
+    }
+    65%{
+        transform: translate(-8px, -11px);
+    }
+    79%{
+        transform: translate(-11px, 12px);
+    }
+}
+
 
