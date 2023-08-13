@@ -67,6 +67,7 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
   slidesPerView: 3,
+  initialSlide: 3,
   centeredSlides: true,
   effect: "coverflow",
   coverflowEffect: {
@@ -75,11 +76,9 @@ const swiper = new Swiper('.swiper', {
     stretch: 60,                    
     slideShadows: false,            
 },
-pagination: {                       // pagination(dots)
-    el: '.swiper-pagination',
+autoplay: {
+    delay: 900,
+    disableOnInteraction: false,
+    reverseDirection: true,
 },
-navigation: {                       // navigation(arrows)
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-},
-})
+});
