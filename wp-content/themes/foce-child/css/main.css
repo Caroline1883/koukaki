@@ -158,6 +158,11 @@
 .swiper {
   width: 750px;
 }
+@media (max-width: 996px) {
+  .swiper {
+    width: 320px;
+  }
+}
 
 .characters-swiper {
   text-align: center;
@@ -169,4 +174,25 @@
 
 .story #place {
   background-image: url("../assets/Studio_Koukaki-image_place.png");
+  position: relative;
+  overflow: hidden;
+}
+.story #place h3, .story #place p {
+  z-index: 1;
+}
+.story #place img {
+  z-index: 0;
+  filter: blur(15px) drop-shadow(0 0 1rem rgb(255, 255, 255));
+}
+
+#bigcloud {
+  position: absolute;
+  left: 20%;
+  top: 80px;
+}
+
+#littlecloud {
+  position: absolute;
+  left: 0;
+  top: 300px;
 }/*# sourceMappingURL=main.css.map */

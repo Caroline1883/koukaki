@@ -79,6 +79,27 @@ const swiper = new Swiper('.swiper', {
 autoplay: {
     delay: 900,
     disableOnInteraction: false,
-    reverseDirection: true,
 },
+breakpoints:{
+    320: {
+        slidesPerView: 1,
+    },
+    996:{
+        slidesPerView: 2,
+    }
+}
+});
+
+//Nuages
+
+const bigcloud = document.getElementById('bigcloud');
+const littlecloud = document.getElementById('littlecloud');
+const maxPosition= 1000;
+
+window.addEventListener('scroll', () => {
+    const scrollPercentage = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+    let newPosition = (scrollPercentage * 15) - 100; // Adjust the multiplication factor as needed
+    newPosition = Math.min(newPosition, maxPosition);
+    bigcloud.style.left = newPosition + 'px';
+    littlecloud.style.left = newPosition - 100 + 'px';
 });

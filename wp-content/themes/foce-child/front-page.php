@@ -25,6 +25,8 @@ get_header();
             <article id="place">
                 <div>
                     <h3><span>Le</span><span> Lieu</span></h3>
+                    <img id="bigcloud" src="<?php echo get_stylesheet_directory_uri() . '/assets/big_cloud.png'; ?>" alt="big cloud">
+                    <img id="littlecloud" src="<?php echo get_stylesheet_directory_uri() . '/assets/little_cloud.png'; ?>" alt="little cloud">
                     <p><?php echo get_theme_mod('place'); ?></p>
                 </div>
 

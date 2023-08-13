@@ -172,6 +172,9 @@ height: 800px;
 
 .swiper {
   width: 750px;
+  @media(max-width: 996px){
+    width: 320px;
+}
 }
 
 .characters-swiper{
@@ -186,4 +189,26 @@ height: 800px;
 
 .story #place{
     background-image: url('../assets/Studio_Koukaki-image_place.png');
+    position: relative;
+    overflow: hidden;
+    h3, p{
+        z-index: 1;
+    }
+    img{
+        z-index: 0;
+        filter: blur(15px) drop-shadow(0 0 1rem rgb(255, 255, 255));
+    }
 }
+
+#bigcloud{
+    position: absolute; 
+    left: 20%;
+    top: 80px;
+}
+
+#littlecloud{
+    position: absolute;
+    left: 0;
+    top: 300px;
+}
+
