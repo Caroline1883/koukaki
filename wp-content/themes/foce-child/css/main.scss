@@ -171,13 +171,19 @@ height: 800px;
 // Swiper
 
 .swiper {
-  width: 600px;
-  height: 600px;
+  width: 750px;
 }
 
 .characters-swiper{
     text-align: center;
     h3{
+    z-index:2;
     background-image: url('../assets/orange_characters_bg.png');
     }
+}
+
+// Nuages
+
+.story #place{
+    background-image: url('../assets/Studio_Koukaki-image_place.png');
 }
