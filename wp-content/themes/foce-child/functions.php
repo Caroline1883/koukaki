@@ -2,7 +2,7 @@
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function theme_enqueue_styles() {
     wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js', array(), 1.0, true);
-    wp_enqueue_style('swiper-style', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css', array(), 1.0, true);
+    wp_enqueue_style('swiper-style-css', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css', array(), 1.0, true);
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_script('child-script', get_stylesheet_directory_uri() . '/js/script.js', array(), '1.0.0', true);
     wp_enqueue_style('child-style', get_stylesheet_directory_uri() . './css/main.css', array('parent-style'));
@@ -18,3 +18,13 @@ if ( get_stylesheet() !== get_template() ) {
         return get_option( 'theme_mods_' . get_template(), $default );
     } );
 }
+
+// Media = 1 --> media = All (Swiper)
+
+function force_media_all_for_swiper_styles($html, $handle, $href, $media) {
+    if ($handle === 'swiper-style-css') {
+        $html = str_replace("media='1'", "media='all'", $html);
+    }
+    return $html;
+}
+add_filter('style_loader_tag', 'force_media_all_for_swiper_styles', 10, 4);

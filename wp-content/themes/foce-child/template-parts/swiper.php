@@ -1,4 +1,4 @@
-<article>
+
 <h3><span>Les</span><span> personnages</span></h3>
 
 <!-- Slider main container -->
@@ -6,9 +6,12 @@
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide"><img src="<?php echo get_stylesheet_directory_uri() . '/assets/oscar.png'; ?> "></div>
+    <div class="swiper-slide"><img src="<?php echo get_stylesheet_directory_uri() . '/assets/oscar.png'; ?> "></div>
+    <div class="swiper-slide"><img src="<?php echo get_stylesheet_directory_uri() . '/assets/oscar.png'; ?> "></div>
+    <div class="swiper-slide"><img src="<?php echo get_stylesheet_directory_uri() . '/assets/oscar.png'; ?> "></div>
+    <div class="swiper-slide"><img src="<?php echo get_stylesheet_directory_uri() . '/assets/oscar.png'; ?> "></div>
+    <div class="swiper-slide"><img src="<?php echo get_stylesheet_directory_uri() . '/assets/oscar.png'; ?> "></div>
   </div>
   <!-- If we need pagination -->
   <div class="swiper-pagination"></div>
@@ -21,4 +24,3 @@
   <div class="swiper-scrollbar"></div>
 </div>
 
-</article>

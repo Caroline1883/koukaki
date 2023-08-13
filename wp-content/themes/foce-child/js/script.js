@@ -64,23 +64,22 @@ window.dispatchEvent(new Event('scroll'));
 
 //Swiper
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
+  // Optional parameters
+  loop: true,
+  slidesPerView: 3,
+  centeredSlides: true,
+  effect: "coverflow",
+  coverflowEffect: {
+    rotate: 0,                      
+    depth: 200,                     
+    stretch: 60,                    
+    slideShadows: false,            
+},
+pagination: {                       // pagination(dots)
+    el: '.swiper-pagination',
+},
+navigation: {                       // navigation(arrows)
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+},
+})
