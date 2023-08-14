@@ -117,9 +117,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     menuToggle.addEventListener('click', function () {
         fullscreenMenu.classList.add('active');
+        fullscreenMenu.classList.remove('inactive');
     });
 
     menuClose.addEventListener('click', function () {
         fullscreenMenu.classList.remove('active');
+        fullscreenMenu.classList.add('inactive');
     });
 });
