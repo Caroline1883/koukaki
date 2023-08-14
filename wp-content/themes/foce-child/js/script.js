@@ -81,12 +81,16 @@ autoplay: {
     disableOnInteraction: false,
 },
 breakpoints:{
-    320: {
+    0: {
         slidesPerView: 1,
     },
-    996:{
+    320:{
         slidesPerView: 2,
+    },
+    996:{
+        slidesPerView: 3,
     }
+
 }
 });
 
@@ -94,7 +98,7 @@ breakpoints:{
 
 const bigcloud = document.getElementById('bigcloud');
 const littlecloud = document.getElementById('littlecloud');
-const maxPosition= 1000;
+const maxPosition= 900;
 
 window.addEventListener('scroll', () => {
     const scrollPercentage = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;

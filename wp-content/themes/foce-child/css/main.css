@@ -79,14 +79,14 @@
   }
 }
 .oscar {
-  padding-top: 200px;
+  padding-top: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 .oscar img {
-  max-width: 278;
+  max-width: 278px;
 }
 .oscar div {
   background-image: url("../assets/orange_oscar_bg.png");
