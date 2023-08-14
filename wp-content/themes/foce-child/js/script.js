@@ -107,3 +107,19 @@ window.addEventListener('scroll', () => {
     bigcloud.style.left = newPosition + 'px';
     littlecloud.style.left = newPosition - 100 + 'px';
 });
+
+//Menu
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const fullscreenMenu = document.querySelector('.fullscreen-menu');
+    const menuClose = document.querySelector('.menu-close');
+
+    menuToggle.addEventListener('click', function () {
+        fullscreenMenu.classList.add('active');
+    });
+
+    menuClose.addEventListener('click', function () {
+        fullscreenMenu.classList.remove('active');
+    });
+});
