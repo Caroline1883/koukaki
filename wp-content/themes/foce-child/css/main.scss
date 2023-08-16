@@ -1,12 +1,12 @@
 //rotation des fleurs
+:root{--speed : 3s}
 .site-footer ul::after,
 .site-footer::before,
 .site-footer::after,
 #studio h2::before,
 #studio h2::after,
-.story__article::after, 
-.flower-rotation{
-    animation: flower-rotation 3s infinite linear;
+.story__article::after {
+    animation: flower-rotation var(--speed) infinite linear;
     }
 
     @keyframes flower-rotation{
@@ -19,21 +19,9 @@
     }
 
 .story h2::after {
-    animation: sunflower-rotation 3s infinite linear;
+    transform-origin: 77px 77px;
+    animation: flower-rotation var(--speed) infinite linear;
     }
-
-    @keyframes sunflower-rotation{
-        from{
-            transform-origin: 50% 45%;
-            transform: rotate(0turn);
-        }
-        to{ 
-            transform-origin: 50% 45%;
-            transform: rotate(1turn);
-        }
-    }
-
-
 
 //fade in sections
 
@@ -91,8 +79,17 @@ height: 800px;
     }
 }
 
-.oscar{
-    padding-top: 100px; 
+// section oscar
+
+.site-footer{
+    flex-direction: column;
+    gap: 100px;
+    padding-top: 5em;
+    padding-bottom: 7em;
+    justify-content: space-between;
+}
+
+.oscar{ 
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -224,13 +221,12 @@ nav {
         cursor: pointer;
         top: 20px; 
         right: 5px;
+        &--active{ 
+            .up {animation: crossup 1s ease-in-out forwards;}
+            .middle{display: none;}
+            .bottom{animation: crossdown 1s ease-in-out forwards;}
+        }
     }
-
-.menu-toggle-active{
-        .up {animation: crossup 1s ease-in-out forwards;}
-        .middle{display: none;}
-        .bottom{animation: crossdown 1s ease-in-out forwards;}
-}
 
 @keyframes crossup{
     to{

@@ -7,7 +7,6 @@
                 'posts_per_page' => -1,
                 'meta_key'  => '_main_char_field',
                 'orderby'   => 'meta_value_num',
-
             );
             $characters_query = new WP_Query($args);
             ?>
