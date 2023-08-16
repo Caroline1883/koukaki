@@ -43,7 +43,8 @@ get_header();
             </section>
 
             <!-- Ajout de la section évènementielle oscar -->
-            <?php echo get_template_part('template-parts/oscar'); ?>
+            <?php // echo get_template_part('template-parts/oscar'); ?>
+            
     </main><!-- #main -->
 
 <?php

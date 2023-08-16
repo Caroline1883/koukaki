@@ -8,9 +8,13 @@ const observer = new IntersectionObserver(entries => {
     });        
     });
 
-observer.observe(document.querySelector('.banner'));
-observer.observe(document.querySelector('.story'));
-observer.observe(document.querySelector('#studio'));
+// observer.observe(document.querySelector('.banner'));
+// observer.observe(document.querySelector('.story'));
+// observer.observe(document.querySelector('#studio'));
+const sections = document.querySelectorAll('section');
+sections.forEach(
+    section => {observer.observe(section)}
+)
 
 
 //Animation titre
@@ -27,7 +31,7 @@ const observerTitle = new IntersectionObserver((entries, observerTitle) => {
     entries.forEach(entry => {
         if (entry.isIntersecting){
             entry.target.classList.add('title-animation');
-            observerTitle.unobserve(entry.target); // Utilisez observerTitle ici
+            observerTitle.unobserve(entry.target);
         }
     });
 }, observertitlesOptions);
@@ -36,38 +40,24 @@ spans.forEach(span => {
   observerTitle.observe(span);
 });
 
-
 //Accélaration des fleurs au scroll
 //Problème : pas de class sur pseudo-éléments
 
-// const flowerRotation = document.querySelector(".flower-rotation");
-// window.addEventListener('scroll', () => {
-//     flowerRotation.style.animationDuration = `5ms`;
-// })
+const root = document.querySelector(':root');
+    window.addEventListener('scroll', () => {
+    root.style.setProperty('--speed','1s');})
+    window.addEventListener('scrollend', () => {
+    root.style.setProperty('--speed','3s');
+})
 
-
-//Parallaxe vidéo
-
-const video = document.getElementById('background-video');
-const banner = document.querySelector('.banner');
-
-window.addEventListener('scroll', () => {
-    const scrollValue = window.scrollY;
-    const offset = scrollValue * 0.1;
-    
-    banner.style.height = video.clientHeight + 'px';
-
-    video.style.transform = `translateY(-${offset}px)`;
-});
-
-window.dispatchEvent(new Event('scroll'));
 
 //Swiper
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
-  slidesPerView: 3,
-  initialSlide: 3,
+//   slidesPerView: 3,
+  slidesPerView: 'auto',
+//   initialSlide: 3,
   centeredSlides: true,
   effect: "coverflow",
   coverflowEffect: {
