@@ -93,8 +93,13 @@ height: 800px;
     flex-direction: column;
     gap: 100px;
     padding-top: 5em;
-    padding-bottom: 7em;
     justify-content: space-between;
+    div{
+        padding-bottom: 10em;
+    }
+    &::after{
+        bottom: 30em
+    }
 }
 
 .oscar{ 

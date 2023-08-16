@@ -84,8 +84,13 @@
   flex-direction: column;
   gap: 100px;
   padding-top: 5em;
-  padding-bottom: 7em;
   justify-content: space-between;
+}
+.site-footer div {
+  padding-bottom: 10em;
+}
+.site-footer::after {
+  bottom: 30em;
 }
 
 .oscar {
