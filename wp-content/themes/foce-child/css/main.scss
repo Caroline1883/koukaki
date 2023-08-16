@@ -3,8 +3,6 @@
 .site-footer ul::after,
 .site-footer::before,
 .site-footer::after,
-#studio h2::before,
-#studio h2::after,
 .story__article::after {
     animation: flower-rotation var(--speed) infinite linear;
     }
@@ -22,6 +20,16 @@
     transform-origin: 77px 77px;
     animation: flower-rotation var(--speed) infinite linear;
     }
+
+#studio h2::before{
+    transform-origin: 101.5px 99.5px;
+    animation: flower-rotation var(--speed) infinite linear;
+}
+
+#studio h2::after{
+    transform-origin: 54.5px 54.5px;
+    animation: flower-rotation var(--speed) infinite linear;
+}
 
 //fade in sections
 
