@@ -41,7 +41,6 @@ spans.forEach(span => {
 });
 
 //Accélaration des fleurs au scroll
-//Problème : pas de class sur pseudo-éléments
 
 const root = document.querySelector(':root');
     window.addEventListener('scroll', () => {
