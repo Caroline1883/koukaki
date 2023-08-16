@@ -226,6 +226,25 @@ nav {
         right: 5px;
     }
 
+.menu-toggle-active{
+        .up {animation: crossup 1s ease-in-out forwards;}
+        .middle{display: none;}
+        .bottom{animation: crossdown 1s ease-in-out forwards;}
+}
+
+@keyframes crossup{
+    to{
+        transform: rotate(40deg) translateY(-5px);
+        
+    }
+}
+
+@keyframes crossdown{
+    to{
+        transform: rotate(-40deg);
+    }
+}
+
 
 .site-title{
     width: 100%;
@@ -277,16 +296,6 @@ nav {
         }    
 }
 
-// .menu-close {
-//     position: absolute;
-//     top: 20px;
-//     right: 20px;
-//     background: none;
-//     border: none;
-//     font-size: 24px;
-//     color: white;
-//     cursor: pointer;
-// }
 
 
 

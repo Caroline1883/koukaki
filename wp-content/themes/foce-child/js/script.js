@@ -111,17 +111,28 @@ window.addEventListener('scroll', () => {
 //Menu
 
 document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.querySelector('.menu-toggle');
+    const menuToggleHamburger = document.querySelector('.hamburger');
     const fullscreenMenu = document.querySelector('.fullscreen-menu');
-    const menuClose = document.querySelector('.menu-close');
 
     menuToggle.addEventListener('click', function () {
         fullscreenMenu.classList.add('active');
         fullscreenMenu.classList.remove('inactive');
+        menuToggleHamburger.classList.add('menu-toggle-active');
+        menuToggleHamburger.classList.remove('hamburger');
     });
 
-    menuClose.addEventListener('click', function () {
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggleActive = document.querySelector('.menu-toggle-active');
+    const fullscreenMenu = document.querySelector('.fullscreen-menu');
+
+    menuToggleActive.addEventListener('click', function () {
         fullscreenMenu.classList.remove('active');
         fullscreenMenu.classList.add('inactive');
+        menuToggleActive.classList.remove('menu-toggle-active');
+        menuToggleActive.classList.add('hamburger');
     });
 });
+
+

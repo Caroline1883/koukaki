@@ -28,10 +28,10 @@
 
 	<header id="masthead" class="site-header">
         <nav id="site-navigation" class="main-navigation">
-        <button class="menu-toggle">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+        <button class="menu-toggle hamburger">
+            <div class="line up"></div>
+            <div class="line middle"></div>
+            <div class="line bottom"></div>
         </button>
         <div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>      
         </nav>
