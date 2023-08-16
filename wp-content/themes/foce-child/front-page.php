@@ -24,7 +24,7 @@ get_header();
             
             <article id="place">
                 <div>
-                    <h3><span>Le</span><span> Lieu</span></h3>
+                    <h3>Le Lieu</h3>
                     <img id="bigcloud" src="<?php echo get_stylesheet_directory_uri() . '/assets/big_cloud.png'; ?>" alt="big cloud">
                     <img id="littlecloud" src="<?php echo get_stylesheet_directory_uri() . '/assets/little_cloud.png'; ?>" alt="little cloud">
                     <p><?php echo get_theme_mod('place'); ?></p>
@@ -42,8 +42,6 @@ get_header();
             </div>
             </section>
 
-            <!-- Ajout de la section évènementielle oscar -->
-            <?php // echo get_template_part('template-parts/oscar'); ?>
             
     </main><!-- #main -->
 
