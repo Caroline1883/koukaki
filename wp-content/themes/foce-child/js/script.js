@@ -66,7 +66,7 @@ const swiper = new Swiper('.swiper', {
     slideShadows: false,            
 },
 autoplay: {
-    delay: 900,
+    delay: 5000,
     disableOnInteraction: false,
 },
 breakpoints:{
@@ -102,6 +102,8 @@ window.addEventListener('scroll', () => {
 document.addEventListener('DOMContentLoaded', function () {
     const menuToggleHamburger = document.querySelector('.hamburger');
     const fullscreenMenu = document.querySelector('.fullscreen-menu');
+    const menuToggleActive = document.querySelector('.menu-toggle-active');
+    const fullscreenMenu = document.querySelector('.fullscreen-menu');
 
     menuToggle.addEventListener('click', function () {
         fullscreenMenu.classList.add('active');
@@ -113,8 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const menuToggleActive = document.querySelector('.menu-toggle-active');
-    const fullscreenMenu = document.querySelector('.fullscreen-menu');
+
 
     menuToggleActive.addEventListener('click', function () {
         fullscreenMenu.classList.remove('active');

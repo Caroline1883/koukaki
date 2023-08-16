@@ -33,6 +33,9 @@
             <div class="line middle"></div>
             <div class="line bottom"></div>
         </button>
+        <button class="button">
+        <span>&#10006;</span>
+        </button>
         <div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>      
         </nav>
         <div class="fullscreen-menu inactive" id="fullscreenMenu">
