@@ -43,10 +43,10 @@
                 <img src="<? echo get_template_directory_uri(). '/assets/images/logo.png'; ?>" alt="logo" class="imglogo">
             </a>
             <ul>
-                <li><a href="#story">Histoire</a></li>
-                <li><a href="#characters">Personnages</a></li>
-                <li><a href="#place">Lieu</a></li>
-                <li><a href="#studio">Studio Koukaki</a></li>
+                <li><a href="#story"><span>Histoire</span></a></li>
+                <li><a href="#newcharacters"><span>Personnages</span></a></li>
+                <li><a href="#place"><span>Lieu</span></a></li>
+                <li><a href="#studio"><span>Studio</span><span> Koukaki</span></a></li>
             </ul>
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>">STUDIO KOUKAKI</a>
             <img src="<? echo get_stylesheet_directory_uri() . '/assets/bluecat.png'; ?>" alt="bluecat" class="menuimgcat menuimgcat--bluecat">

@@ -99,10 +99,13 @@ window.addEventListener('scroll', () => {
 
 //Menu
 
+const menuToggleHamburger = document.querySelector('.hamburger');
+const fullscreenMenu = document.querySelector('.fullscreen-menu');
+const menuToggleClosed = document.querySelector('.closed');
+const menuLis = document.querySelectorAll('li');
+
 document.addEventListener('DOMContentLoaded', function () {
-    const menuToggleHamburger = document.querySelector('.hamburger');
-    const fullscreenMenu = document.querySelector('.fullscreen-menu');
-    const menuToggleClosed = document.querySelector('.closed');
+
 
     menuToggleHamburger.addEventListener('click', function () {
         fullscreenMenu.classList.add('active');
@@ -116,12 +119,21 @@ document.addEventListener('DOMContentLoaded', function () {
         fullscreenMenu.classList.remove('active');
         menuToggleHamburger.classList.add('hamburger');
         menuToggleClosed.classList.add('inactive');
-
     });
-
-
 
 });
 
+
+function menuLiF() {
+    fullscreenMenu.classList.add('inactive');
+    fullscreenMenu.classList.remove('active');
+    menuToggleHamburger.classList.add('hamburger');
+    menuToggleClosed.classList.add('inactive');
+}
+
+
+menuLis.forEach(
+    menuLi => {menuLi.addEventListener('click', menuLiF)}
+)
 
 
