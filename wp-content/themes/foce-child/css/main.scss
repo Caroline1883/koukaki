@@ -226,22 +226,28 @@ height: 800px;
 
 nav {
     display: flex;
-    position: relative;
+    position: fixed;
+    height: 80px;
     }
     .hamburger {
         display: block!important; 
         position: absolute;
         cursor: pointer;
         top: 20px; 
-        right: 15px;
+        right: 10%;
+            @media(max-width: 996px){
+            right: 50%;
+            }
     }
     .closed{
         position: absolute;
         font-size: 25px;
         top: -15px;
-        right: 5px;
+        right: 9%;
+            @media(max-width: 996px){
+            right: 50%;
+            }
         }
-    
     .site-title{
     width: 100%;
     text-align: center;
@@ -262,6 +268,7 @@ nav {
 
 .fullscreen-menu {
     position: fixed;
+    top: 80px;
     width: 100%;
     max-width: 1440px;
     margin: auto; 
@@ -287,6 +294,9 @@ nav {
         text-align: center;
         padding: 0px 0px 150px 0px;
         margin: 0px;
+            @media(max-width: 996px){
+                padding: 0px;
+            }
             li{
             margin: 20px 0;
                 a{
@@ -295,6 +305,9 @@ nav {
                 font-size: 64px;
                     &:hover{
                     text-shadow: #FF5C00 1px 0px 10px;
+                    }
+                    @media(max-width: 996px){
+                        font-size: 20px;;
                     }
                 }
             }
@@ -322,6 +335,9 @@ nav {
             &--blackcat{
                 top: 470px;
                 right: 210px;
+            }
+            @media(max-width: 996px){
+                display: none;
             }
         }
         .menuimgflower{
@@ -354,9 +370,10 @@ nav {
                 top: 395px;
                 right: -35px;
             }
+            @media(max-width: 996px){
+                display: none;
+            }
         }
-
-            
         }    
 
 
