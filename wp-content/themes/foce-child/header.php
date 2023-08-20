@@ -39,7 +39,9 @@
         <div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>      
         </nav>
         <div class="fullscreen-menu inactive" id="fullscreenMenu">
-            <img src="<? echo get_template_directory_uri(). '/assets/images/logo.png'; ?>" alt="logo">
+            <a href="#">
+                <img src="<? echo get_template_directory_uri(). '/assets/images/logo.png'; ?>" alt="logo">
+            </a>
             <ul>
                 <li><a href="#story">Histoire</a></li>
                 <li><a href="#characters">Personnages</a></li>
