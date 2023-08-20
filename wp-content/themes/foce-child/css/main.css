@@ -216,38 +216,31 @@ nav {
   position: relative;
 }
 
-.menu-toggle {
+.hamburger {
   display: block !important;
   position: absolute;
   cursor: pointer;
   top: 20px;
   right: 5px;
 }
-.menu-toggle--active .up {
-  animation: crossup 1s ease-in-out forwards;
-}
-.menu-toggle--active .middle {
-  display: none;
-}
-.menu-toggle--active .bottom {
-  animation: crossdown 1s ease-in-out forwards;
+
+.closed {
+  position: absolute;
+  font-size: 25px;
+  top: -15px;
+  right: 5px;
 }
 
-@keyframes crossup {
-  to {
-    transform: rotate(40deg) translateY(-5px);
-  }
-}
-@keyframes crossdown {
-  to {
-    transform: rotate(-40deg);
-  }
-}
 .site-title {
   width: 100%;
   text-align: center;
   height: 80px;
   padding-top: 20px;
+}
+@media (max-width: 996px) {
+  .site-title {
+    display: none;
+  }
 }
 
 .inactive {
