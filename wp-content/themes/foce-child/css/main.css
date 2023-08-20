@@ -253,14 +253,17 @@ nav {
 
 .fullscreen-menu {
   position: fixed;
-  top: 80px;
-  left: 0;
   width: 100%;
+  max-width: 1440px;
+  margin: auto;
   background-color: #FFF5E9;
   z-index: 1000;
   padding: 40px 0px;
+  overflow: hidden;
+  animation: fade-in-section 1s;
+  box-shadow: 0px 200px 150px grey;
 }
-.fullscreen-menu img {
+.fullscreen-menu .imglogo {
   max-width: 155px;
   margin: auto;
   display: flex;
@@ -268,13 +271,13 @@ nav {
   align-items: center;
   justify-content: center;
 }
-.fullscreen-menu img:hover {
+.fullscreen-menu .imglogo:hover {
   filter: drop-shadow(0px 1px 10px #FF5C00);
 }
 .fullscreen-menu ul {
   list-style: none;
   text-align: center;
-  padding: 0px 0px 177px 0px;
+  padding: 0px 0px 150px 0px;
   margin: 0px;
 }
 .fullscreen-menu ul li {
@@ -294,4 +297,53 @@ nav {
   margin: auto;
   text-decoration: none;
   font-size: 12px;
+}
+.fullscreen-menu .menuimgcat {
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  animation: floating 4s ease-in-out infinite;
+}
+.fullscreen-menu .menuimgcat--bluecat {
+  top: 160px;
+  left: 267px;
+}
+.fullscreen-menu .menuimgcat--orangecat {
+  top: 747px;
+  left: 79px;
+}
+.fullscreen-menu .menuimgcat--blackcat {
+  top: 470px;
+  right: 210px;
+}
+.fullscreen-menu .menuimgflower {
+  position: absolute;
+  z-index: 0;
+  animation: flower-rotation var(--speed) infinite linear;
+}
+.fullscreen-menu .menuimgflower--orchid {
+  width: 172px;
+  top: 72px;
+  left: -70px;
+}
+.fullscreen-menu .menuimgflower--sunflower {
+  height: 216px;
+  top: 89px;
+  right: 185px;
+}
+.fullscreen-menu .menuimgflower--flower {
+  height: 70px;
+  top: 483px;
+  left: 213px;
+}
+.fullscreen-menu .menuimgflower--hibiscus {
+  height: 626px;
+  width: 626px;
+  top: 600px;
+  right: -300px;
+}
+.fullscreen-menu .menuimgflower--randomflower {
+  height: 75px;
+  top: 395px;
+  right: -35px;
 }/*# sourceMappingURL=main.css.map */

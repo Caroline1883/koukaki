@@ -39,8 +39,8 @@
         <div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>      
         </nav>
         <div class="fullscreen-menu inactive" id="fullscreenMenu">
-            <a href="#">
-                <img src="<? echo get_template_directory_uri(). '/assets/images/logo.png'; ?>" alt="logo">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                <img src="<? echo get_template_directory_uri(). '/assets/images/logo.png'; ?>" alt="logo" class="imglogo">
             </a>
             <ul>
                 <li><a href="#story">Histoire</a></li>
@@ -48,7 +48,16 @@
                 <li><a href="#place">Lieu</a></li>
                 <li><a href="#studio">Studio Koukaki</a></li>
             </ul>
-            <a href="#">STUDIO KOUKAKI</a>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">STUDIO KOUKAKI</a>
+            <img src="<? echo get_stylesheet_directory_uri() . '/assets/bluecat.png'; ?>" alt="bluecat" class="menuimgcat menuimgcat--bluecat">
+            <img src="<? echo get_stylesheet_directory_uri() . '/assets/orangecat.png'; ?>" alt="orangecat" class="menuimgcat menuimgcat--orangecat">
+            <img src="<? echo get_stylesheet_directory_uri() . '/assets/blackcat.png'; ?>" alt="blackcat" class="menuimgcat menuimgcat--blackcat">
+            <img src="<? echo get_stylesheet_directory_uri() . '/assets/orchid.png'; ?>" alt="orchid" class="menuimgflower menuimgflower--orchid">
+            <img src="<? echo get_stylesheet_directory_uri() . '/assets/Sunflower.png'; ?>" alt="sunflower" class="menuimgflower menuimgflower--sunflower">
+            <img src="<? echo get_stylesheet_directory_uri() . '/assets/hibiscus_footer.png'; ?>" alt="hibiscus" class="menuimgflower menuimgflower--hibiscus">
+            <img src="<? echo get_stylesheet_directory_uri() . '/assets/flower.png'; ?>" alt="flower" class="menuimgflower menuimgflower--flower">
+            <img src="<? echo get_stylesheet_directory_uri() . '/assets/random_flower.png'; ?>" alt="flower" class="menuimgflower menuimgflower--randomflower">
+
         </div>
 
 	</header>

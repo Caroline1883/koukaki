@@ -262,13 +262,16 @@ nav {
 
 .fullscreen-menu {
     position: fixed;
-    top: 80px;
-    left: 0;
     width: 100%;
+    max-width: 1440px;
+    margin: auto; 
     background-color: #FFF5E9;
     z-index: 1000;
     padding: 40px 0px;
-        img{
+    overflow: hidden;
+    animation: fade-in-section 1s;
+    box-shadow: 0px 200px 150px grey;
+        .imglogo{
             max-width: 155px;
             margin: auto;
             display: flex;
@@ -282,7 +285,7 @@ nav {
         ul{
         list-style: none;
         text-align: center;
-        padding: 0px 0px 177px 0px;
+        padding: 0px 0px 150px 0px;
         margin: 0px;
             li{
             margin: 20px 0;
@@ -302,8 +305,60 @@ nav {
             margin: auto;
             text-decoration: none;
             font-size: 12px;
+        }
+        .menuimgcat{
+            position: absolute;
+            overflow: hidden;
+            z-index: 0;
+            animation: floating 4s ease-in-out infinite;
+            &--bluecat{
+                top: 160px;
+                left: 267px;
+            }
+            &--orangecat{
+                top: 747px;
+                left: 79px;
+            }
+            &--blackcat{
+                top: 470px;
+                right: 210px;
+            }
+        }
+        .menuimgflower{
+            position: absolute;
+            z-index: 0;
+            animation: flower-rotation var(--speed) infinite linear;
+            &--orchid{
+                width: 172px;
+                top: 72px;
+                left: -70px;
+            }
+            &--sunflower{
+                height: 216px;
+                top: 89px;
+                right: 185px;
+            }
+            &--flower{
+                height: 70px;
+                top: 483px;
+                left: 213px;
+            }
+            &--hibiscus{
+                height: 626px;
+                width: 626px;
+                top: 600px;
+                right: -300px;
+            }
+            &--randomflower{
+                height: 75px;
+                top: 395px;
+                right: -35px;
+            }
+        }
+
+            
         }    
-}
+
 
 
 
