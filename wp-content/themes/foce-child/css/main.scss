@@ -34,9 +34,11 @@
 //fade in sections
 
 .fade-in-section{
+    @media (min-width: 996px){
     animation: fade-in-section 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    }
 }
 
 @keyframes fade-in-section{
@@ -55,7 +57,11 @@ background-attachment: fixed;
 background-size: cover;
 background-position: center; 
 background-repeat: no-repeat;
-height: 800px;
+height: 806px;
+    @media (max-width: 996px) {
+    min-height: 50vh;
+    height: 50vh;
+    }
     img{
         position: sticky;
         top: 0;
@@ -69,8 +75,10 @@ height: 800px;
 .title-animation{
         white-space: pre;
         display: inline-block;
-        transform: translateY(100%);
-        animation: title-animation 0.5s ease-in-out forwards;
+        @media (min-width: 996px){
+            transform: translateY(100%);
+            animation: title-animation 0.5s ease-in-out forwards;
+        }
     }
 
 .title-animation:nth-child(1) {
@@ -126,10 +134,11 @@ height: 800px;
         text-align: left;
         padding: 50px 50px 50px 70px;
         text-shadow: 0px 4px 15px #00000041;
-            @media (max-width: 700px) {
+            @media (max-width: 996px) {
             width: 320px;
+            height: 100px;
+            padding: 0px 0px 50px 0px;
             background: none;
-            text-shadow: 0px 0px 5px #FF5C00;
             color:#FF5C00;
             font-size: 25px;
             line-height: 25px;
@@ -139,6 +148,7 @@ height: 800px;
     @media (max-width: 996px) {
         flex-direction: column;
         align-items: center;
+        padding-bottom: 150px;
     }
 }
 
@@ -236,7 +246,6 @@ nav {
         top: 20px; 
         right: 10%;
             @media(max-width: 996px){
-            right: 50%;
             }
     }
     .closed{
@@ -245,7 +254,6 @@ nav {
         top: -15px;
         right: 9%;
             @media(max-width: 996px){
-            right: 50%;
             }
         }
     .site-title{
@@ -267,8 +275,7 @@ nav {
     }
 
 .fullscreen-menu {
-    position: fixed;
-    top: 80px;
+    position: relative;
     width: 100%;
     max-width: 1440px;
     margin: auto; 
@@ -276,8 +283,10 @@ nav {
     z-index: 1000;
     padding: 40px 0px;
     overflow: hidden;
-    animation: fade-in-section 1s;
-    box-shadow: 0px 200px 150px grey;
+    box-shadow: 0px 20px 150px white;
+    @media(min-width: 996px){
+        animation: fade-in-section 1s;
+    }
         .imglogo{
             max-width: 155px;
             margin: auto;
@@ -295,7 +304,7 @@ nav {
         padding: 0px 0px 150px 0px;
         margin: 0px;
             @media(max-width: 996px){
-                padding: 0px;
+                padding-bottom: 50px;
             }
             li{
             margin: 20px 0;
@@ -376,7 +385,16 @@ nav {
         }
         }    
 
+//correction mobile
 
+h2, h3{
+    @media(max-width: 996px){
+        font-size: 30px;
+    }
+}
 
-
-
+footer{
+    @media(max-width: 996px){
+        font-size: 10px;
+    }
+}

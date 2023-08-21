@@ -32,10 +32,12 @@
   animation: flower-rotation var(--speed) infinite linear;
 }
 
-.fade-in-section {
-  animation: fade-in-section 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+@media (min-width: 996px) {
+  .fade-in-section {
+    animation: fade-in-section 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
 }
 
 @keyframes fade-in-section {
@@ -51,7 +53,13 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 800px;
+  height: 806px;
+}
+@media (max-width: 996px) {
+  .banner {
+    min-height: 50vh;
+    height: 50vh;
+  }
 }
 .banner img {
   position: sticky;
@@ -63,8 +71,12 @@
 .title-animation {
   white-space: pre;
   display: inline-block;
-  transform: translateY(100%);
-  animation: title-animation 0.5s ease-in-out forwards;
+}
+@media (min-width: 996px) {
+  .title-animation {
+    transform: translateY(100%);
+    animation: title-animation 0.5s ease-in-out forwards;
+  }
 }
 
 .title-animation:nth-child(1) {
@@ -119,11 +131,12 @@
   padding: 50px 50px 50px 70px;
   text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2549019608);
 }
-@media (max-width: 700px) {
+@media (max-width: 996px) {
   .oscar div {
     width: 320px;
+    height: 100px;
+    padding: 0px 0px 50px 0px;
     background: none;
-    text-shadow: 0px 0px 5px #FF5C00;
     color: #FF5C00;
     font-size: 25px;
     line-height: 25px;
@@ -134,6 +147,7 @@
   .oscar {
     flex-direction: column;
     align-items: center;
+    padding-bottom: 150px;
   }
 }
 
@@ -224,24 +238,12 @@ nav {
   top: 20px;
   right: 10%;
 }
-@media (max-width: 996px) {
-  .hamburger {
-    right: 50%;
-  }
-}
-
 .closed {
   position: absolute;
   font-size: 25px;
   top: -15px;
   right: 9%;
 }
-@media (max-width: 996px) {
-  .closed {
-    right: 50%;
-  }
-}
-
 .site-title {
   width: 100%;
   text-align: center;
@@ -263,8 +265,7 @@ nav {
 }
 
 .fullscreen-menu {
-  position: fixed;
-  top: 80px;
+  position: relative;
   width: 100%;
   max-width: 1440px;
   margin: auto;
@@ -272,8 +273,12 @@ nav {
   z-index: 1000;
   padding: 40px 0px;
   overflow: hidden;
-  animation: fade-in-section 1s;
-  box-shadow: 0px 200px 150px grey;
+  box-shadow: 0px 20px 150px white;
+}
+@media (min-width: 996px) {
+  .fullscreen-menu {
+    animation: fade-in-section 1s;
+  }
 }
 .fullscreen-menu .imglogo {
   max-width: 155px;
@@ -294,7 +299,7 @@ nav {
 }
 @media (max-width: 996px) {
   .fullscreen-menu ul {
-    padding: 0px;
+    padding-bottom: 50px;
   }
 }
 .fullscreen-menu ul li {
@@ -377,5 +382,17 @@ nav {
 @media (max-width: 996px) {
   .fullscreen-menu .menuimgflower {
     display: none;
+  }
+}
+
+@media (max-width: 996px) {
+  h2, h3 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 996px) {
+  footer {
+    font-size: 10px;
   }
 }/*# sourceMappingURL=main.css.map */

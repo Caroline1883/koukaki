@@ -51,6 +51,7 @@ const root = document.querySelector(':root');
 
 
 //Swiper
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
@@ -65,10 +66,10 @@ const swiper = new Swiper('.swiper', {
     stretch: 60,                    
     slideShadows: false,            
 },
-autoplay: {
+autoplay: isMobile ? false : {
     delay: 5000,
     disableOnInteraction: false,
-},
+  },
 breakpoints:{
     0: {
         slidesPerView: 1,
