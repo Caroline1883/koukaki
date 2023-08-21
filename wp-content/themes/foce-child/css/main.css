@@ -1,5 +1,6 @@
 :root {
   --speed: 3s;
+  --orangeoscar: #FF5C00;
 }
 
 .site-footer ul::after,
@@ -78,11 +79,9 @@
     animation: title-animation 0.5s ease-in-out forwards;
   }
 }
-
 .title-animation:nth-child(1) {
   animation-delay: 0.2s;
 }
-
 .title-animation:nth-child(2) {
   animation-delay: 0.4s;
 }
@@ -116,14 +115,14 @@
 }
 .oscar div {
   background-image: url("../assets/orange_oscar_bg.png");
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
   width: 700px;
   height: 250px;
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
   line-height: 40px;
-  letter-spacing: -2%;
+  letter-spacing: -1px;
   color: #FFF5E9;
   font-size: 35px;
   margin: 0;
@@ -137,7 +136,7 @@
     height: 100px;
     padding: 0px 0px 50px 0px;
     background: none;
-    color: #FF5C00;
+    color: var(--orangeoscar);
     font-size: 25px;
     line-height: 25px;
     text-align: center;
@@ -289,7 +288,7 @@ nav {
   justify-content: center;
 }
 .fullscreen-menu .imglogo:hover {
-  filter: drop-shadow(0px 1px 10px #FF5C00);
+  filter: drop-shadow(0px 1px 10px var(--orangeoscar));
 }
 .fullscreen-menu ul {
   list-style: none;
@@ -311,7 +310,7 @@ nav {
   font-size: 64px;
 }
 .fullscreen-menu ul li a:hover {
-  text-shadow: #FF5C00 1px 0px 10px;
+  text-shadow: var(--orangeoscar) 1px 0px 10px;
 }
 @media (max-width: 996px) {
   .fullscreen-menu ul li a {
